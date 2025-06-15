@@ -10,6 +10,7 @@ function saveNewNote() {
     // console.log(notesList)
     loadNotes();
 }
+
 function loadNotes() {
     document.getElementById("notes").innerHTML=""
     let noteList = JSON.parse(localStorage.getItem("braindump")) || []
@@ -43,3 +44,7 @@ loadNotes();
 // noteDiv.appendChild(contentDiv)
 
 // document.getElementById("notes").appendChild(noteDiv);
+function clearPOPUP(){
+    document.getElementById("contentNote").value=""
+    document.getElementById("headingNote").value=""
+}
