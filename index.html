@@ -1,72 +1,103 @@
 <html>
-    <head>
-        <title>BrainDUMP</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&family=Playwrite+VN:wght@100..400&family=Syne+Tactile&family=The+Girl+Next+Door&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Shrikhand:wght@400">
-        <link rel="stylesheet" href="braindump.css">
-    </head>
-    <body>
-        <div id="main">
-            <div id="head">
-                
-                <div>
-                    <div id="name">BrainDUMP</div>    
-                    <div id="tagline">where your brain takes a break, and your notes take the L .</div>
-                </div>
-                <div id="pop"> <video src="imgs/pop.webm" autoplay muted loop preload="auto"></video> </div>
-            </div>
 
-        </div>
-        <div id="content">
-            
-            <div id="todolist">
-                <div class="heading">
-                    ToDo List 
-                    <hr id="default">
-                </div> 
-                <div>
-                    <div class="item"> <label> <input type="checkbox"> buy lemons </label> </div>
-                    <div class="item"> <label> <input type="checkbox"> buy lemons </label></div>
-                    <div class="item"> <label> <input type="checkbox"> buy lemons </label></div>  
-                </div>
+<head>
+    <title>BrainDUMP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&family=Playwrite+VN:wght@100..400&family=Syne+Tactile&family=The+Girl+Next+Door&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Shrikhand:wght@400">
+    <link rel="stylesheet" href="braindump.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+</head>
+
+<body>
+   
+    <div id="main">
+        <div id="head">
+
+            <div>
+                <div id="name">BrainDUMP</div>
+                <div id="tagline">where your brain takes a break, and your notes take the L .</div>
             </div>
-            <div id="notespage">
-                <button class="heading" id="new" onclick="newNote()">Add New <div id="plus">+</div></button>
-                <div id="notes">
-                    <div class="note">
-                        <div class="title">Title</div>
-                        <hr>
-                        <div class="description">
-                            Game Boy permadeath controller bug non-player character Monster Hunter action command CP trigger WoW walling main quest feeding.
-                        </div>
-                    </div>
-                    <div class="note">
-                        <div class="title">Title</div>
-                        <hr>
-                        <div class="description">
-                            Game Boy permadeath controller bug non-player character Monster Hunter action command CP trigger WoW walling main quest feeding.
-                        </div>
-                    </div>
-                    <div class="note">
-                        <div class="title">Title</div>
-                        <hr>
-                        <div class="description">
-                            Game Boy permadeath controller bug non-player character Monster Hunter action command CP trigger WoW walling main quest feeding.
-                        </div>
-                    </div>
-                    <div class="note">
-                        <div class="Title">Title</div>
-                        <hr>
-                        <div class="description">
-                            Game Boy permadeath controller bug non-player character Monster Hunter action command CP trigger WoW walling main quest feeding.
-                        </div>
-                    </div>
-                </div>
-                </div>
+            <div id="pop"> <video src="imgs/pop.webm" autoplay muted loop preload="auto"></video> </div>
+        </div>
+
+    </div>
+    <div id="content">
+
+        <div id="todolist">
+            <div class="heading">
+                ToDo List
+                <hr id="default">
+            </div>
+            <div>
+                <div class="item"> <label> <input type="checkbox"> buy lemons </label> </div>
+                <div class="item"> <label> <input type="checkbox"> buy lemons </label></div>
+                <div class="item"> <label> <input type="checkbox"> buy lemons </label></div>
             </div>
         </div>
-    </body>
+        <div id="notespage">
+            <!-- <button  data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Open first
+        modal</button> -->
+            <button class="heading" id="new" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" >Add New <div id="plus">+</div></button>
+            <div id="notes">
+                <!-- <div class="note">
+                    <div class="title">Title</div>
+                    <hr>
+                    <div class="description">
+                        Game Boy permadeath controller bug non-player character Monster Hunter action command CP trigger
+                        WoW walling main quest feeding.
+                    </div>
+                </div>
+                <div class="note">
+                    <div class="title">Title</div>
+                    <hr>
+                    <div class="description">
+                        Game Boy permadeath controller bug non-player character Monster Hunter action command CP trigger
+                        WoW walling main quest feeding.
+                    </div>
+                </div>
+                <div class="note">
+                    <div class="title">Title</div>
+                    <hr>
+                    <div class="description">
+                        Game Boy permadeath controller bug non-player character Monster Hunter action command CP trigger
+                        WoW walling main quest feeding.
+                    </div>
+                </div>
+                <div class="note">
+                    <div class="Title">Title</div>
+                    <hr>
+                    <div class="description">
+                        Game Boy permadeath controller bug non-player character Monster Hunter action command CP trigger
+                        WoW walling main quest feeding.
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel"> <input type="text" id="headingNote" size="44%" placeholder="Heading"> </h1>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                </div>
+                <div class="modal-body">
+                   <textarea rows="10" cols="58" placeholder="Dump your brain here" id="contentNote"></textarea>
+                </div>
+                <div class="modal-footer">
+                     <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Cancel</button>
+                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" onclick="saveNewNote()">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
-            
+<script src="todo.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>

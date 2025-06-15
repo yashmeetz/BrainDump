@@ -29,7 +29,7 @@
     z-index: 1;
     position: relative;
     bottom: 40px;
-    height: 500px;
+    height: 75vh;
     background-color: e0b1cb;
     padding: 20px;
     margin: 20px;
@@ -37,7 +37,7 @@
 }
 #todolist{
     background-color: bisque;
-    height: 470px;
+    height: 95%;
     width: 25%;
     border-radius: 25px;
     margin: 15px;
@@ -67,12 +67,15 @@
     width: 75%;
 }
 #plus{
-    border-radius: 100px;
-    border-width:1px;
-    border-style:solid;
-    border-color:black;
+   border-radius: 100px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
     height: 30;
-    aspect-ratio: 1/1;
+    align-items: center;
+    width: 30;
+    justify-content: center;
+    display: flex;
 }
 #notes{
     display: flex;
@@ -82,7 +85,7 @@
     margin-top: 25px;
     margin-bottom: 25px;
     border-radius: 25px;
-    height: auto;
+    height: 83%;
     padding: 8px;
 }
 .note{
@@ -90,7 +93,8 @@
     width: 47%;
     border-radius: 15px;
     margin: 8px;
-    height: min-content;
+    min-height: 100px;
+    max-height: 200px;
 }
 .title{
     text-align: center;
@@ -110,6 +114,13 @@ hr{
 .item{
     font-size: 18px;
     padding: 8px;
+}
+#headingNote{
+    border-radius: 8px;
+    text-align: center;
+}
+#contentNote{
+    border-radius: 8px;
 }
 /* e0b1cb
 be95c4
